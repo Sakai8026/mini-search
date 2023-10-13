@@ -12,7 +12,7 @@ def read_json_value(file_name, i):
 def main():
   st.title('タグと単語の番号検索')
 
-  selected_file = st.radio("対象を選択", ("tags", "words"))
+  selected_file = st.radio("対象を選択（青:tags / 緑:words）", ("tags", "words"))
 
   # ユーザーから数値を受け取る
   i = st.number_input('タグ番号を入力:', min_value=0, step=1)
